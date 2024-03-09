@@ -46,7 +46,7 @@ def app_sidebar():
 def app_body():
     title = '<p style="font-family:arial, sans-serif; color:Black; font-size: 40px;"><b> Welcome to DSSI Car Price Prediction</b></p>'
     st.markdown(title, unsafe_allow_html=True)
-    st.image("/Users/jiangzhenyao/Desktop/Cars.png", use_column_width=True)
+    st.image("./Cars.png", use_column_width=True)
     default_msg = '**System assessment says:** {}'
     if st.session_state['input_features']:
         assessment = get_prediction(Age=st.session_state['input_features']['Age'],
